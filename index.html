@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="task2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="row navbar">
+        <div class="col-12 col-md-6 col-sm-4  d-flex justify-content-center justify-content-md-start ">
+            <h1><a href="task2.html"><span>A</span>nto <span>A</span>rockia <span>Infant</span></a></h1>
+        </div>
+        <div class="col-12 col-md-6 col-sm-4  d-flex justify-content-center justify-content-md-end menu">
+            <ul class="list-inline">
+                <li class="list-inline-item letter-spacing" onclick="showContent('resume')">RESUME</li>
+                <li class="list-inline-item letter-spacing" onclick="showContent('projects')">PROJECTS</li>
+                <li class="list-inline-item letter-spacing" onclick="showContent('contact')">CONTACT</li>
+            </ul>          
+        </div>
+    </div>
+
+    <div class=" row main " id="about">
+        <!-- About Section (Initially Visible) -->
+            <div class="col content">
+                <h1>I'm <span>Anto</span> Arockia Infant</h1>
+
+                    <h4><span>Web</span> Developer</h4>
+                 
+                
+                <h4  >Based in Chennai</h4>
+                <p style="color: rgb(52, 38, 38); font-weight: 600;">I am a passionate individual with a keen interest in web development. I enjoy exploring the latest technologies and trends in the field, and I am always eager to learn new skills and improve my craft.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><button class="btn btn-warning " onclick="showContent('resume')">Resume</button></li>
+                    <li class="list-inline-item"><button class="btn btn-danger" onclick="showContent('projects')">Projects</button></li>
+                    <li class="list-inline-item"><button class="btn btn-info" onclick="showContent('contact')">Contact</button></li>
+                </ul>
+            </div>
+            <div class="col myimage  ">
+                <img  class="glow-element"  src="assests/cropped_image (1).png" alt="">
+            </div>
+    </div>
+    
+    <div class="resume" id="resume" style="display: none;">
+        <section id="experience">
+            <h2 class="card-title">Experience</h2>
+            <div class="card">
+                <h3 class="card-title">Software Developer</h3>
+                <p><strong>ABC Corp</strong> | Jan 2022 - Present</p>
+                <p>Worked on developing web applications and improving user interfaces.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Intern</h3>
+                <p><strong>XYZ Ltd.</strong> | Jun 2021 - Dec 2021</p>
+                <p>Assisted in software development and testing tasks.</p>
+            </div>
+        </section>
+    
+        <section id="skills">
+            <h2 class="card-title">Skills</h2>
+            <div class="card">
+                <ul>
+                    <li>HTML - Advanced</li>
+                    <li>CSS - Advanced</li>
+                    <li>JavaScript - Intermediate</li>
+                    <li>Python - Intermediate</li>
+                </ul>
+            </div>
+        </section>
+        <section id="workshops">
+            <h2 class="card-title">WorkShops</h2>
+            <div class="card">
+                <h3 class="card-title">Intern</h3>
+                <p><strong>XYZ Ltd.</strong> | Jun 2021 - Dec 2021</p>
+                <p>Assisted in software development and testing tasks.</p>
+            </div>
+        </section>
+        <section class="hacathons">
+            <h2 class="card-title">Hacathons</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title" >IOT</h3>
+                    <p><strong>XYZ Ltd.</strong> | Jun 2021 - Dec 2021</p>
+                <p >Assisted in software development and testing tasks.</p>
+                </div>
+
+            </div>
+        </section>
+    
+    </div>
+    
+    <div class="projects" id="projects" style="display: none;">
+        <div class="container mt-5">
+            <div class="row">
+                <div class=" col-12 col-md-6 col-sm-4 mb-4">
+                    <div class="card">
+                        <img src="assests/Ecommerce web page.gif" class="card-img-top" alt="E-commerce Website">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Website</h5>
+                            <p class="card-text">This project involves creating a fully functional e-commerce platform.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-4 mb-4">
+                    <div class="card">
+                        <img src="assests/Order food.gif" class="card-img-top" alt="CURD Application">
+                        <div class="card-body">
+                            <h5 class="card-title">CURD Application</h5>
+                            <p class="card-text">A simple application for creating, updating, reading, and deleting records.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-4 mb-4">
+                    <div class="card">
+                        <img src="assests/Windows.gif" class="card-img-top" alt="Symposium Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Symposium Website</h5>
+                            <p class="card-text">This website is designed to manage symposium events and registrations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-4 mb-4">
+                    <div class="card">
+                        <img src="assests/Login.gif" class="card-img-top" alt="Student Registration Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Registration Website</h5>
+                            <p class="card-text">A platform for students to register for courses and manage their profiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+
+    </div>    
+    
+    <div class="contact" id="contact" style="display: none;">
+            <h1 style="text-align: center;">Contact Me!</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+            <div id="response"></div>
+        
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-12 col-md-6 col-sm-4 d-flex  justify-content-center justify-content-md-start">
+                <h3>Phone</h3>
+                <p>91+:8940207449</p>
+            </div>
+            <div class="col-12 col-md-6 col-sm-4 d-flex justify-content-center justify-content-md-end">
+                <ul class="social list-inline">
+    
+                    <li class="list-inline-item"><i class="fa fa-github" aria-hidden="true"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-google" aria-hidden="true"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                </ul>  
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript CDN for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+        const responseDiv = document.getElementById('response');
+    
+        form.addEventListener('submit', (e) => {
+         e.preventDefault();
+         const name = document.getElementById('name').value;
+         const email = document.getElementById('email').value;
+         const message = document.getElementById('message').value;
+    
+    
+         responseDiv.innerHTML = `Thank you for contacting us, ${name}!`;
+       });
+        function showContent(section) {
+            // Hide all sections
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('resume').style.display = 'none';
+            document.getElementById('projects').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+    
+            // Show the selected section
+            document.getElementById(section).style.display = 'block';
+        }
+
+        const typingElements = document.querySelectorAll('.typing');
+        let currentIndex = 0;
+
+    function startTypingAnimation  ()
+     {
+        typingElements.forEach((el, index) => {
+            el.classList.remove('active'); // Remove active class from all
+            el.style.animation = 'none'; // Reset animation
+        });
+
+    // Set the current element to active
+                 typingElements[currentIndex].classList.add('active');
+                typingElements[currentIndex].style.animation = 'typing 2s steps(20, end) forwards, typing-reverse 2s steps(20, end) forwards';
+    
+    // Move to the next index
+                currentIndex = (currentIndex + 1) % typingElements.length; // Loop back to the first element
+    }
+
+    // Start the animation
+        setInterval(startTypingAnimation, 4000); // Change every 4 seconds
+    </script>
+</body>
+</html>
